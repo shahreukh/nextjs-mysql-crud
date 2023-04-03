@@ -12,7 +12,7 @@ function Layout() {
   const value = useContext(AppContext);
 
   const [checkedUser, setCheckedUser] = useState([]);
-  console.log(checkedUser);
+  // console.log(checkedUser);
   const [alertMessage, setAlertMessage] = useState('');
   const [saveUser, setSaveUser] = useState({
     uuid: '',

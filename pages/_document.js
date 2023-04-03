@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round"
+          href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round&display=optional"
         />
         <link
           rel="stylesheet"
