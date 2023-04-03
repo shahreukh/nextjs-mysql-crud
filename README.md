@@ -2,6 +2,10 @@ XML to MySQL with CRUD Operations and Pagination
 This project converts XML data to MySQL database, and provides a responsive webpage with CRUD operations, pagination and search functionality.
 Search option searches values of uuid.
 
+You can access this application from this link: https://hevi.vercel.app
+
+In case if buttons does not work please go to home pagehttps://hevi.vercel.app and try again.
+
 Prerequisites
 Node.js (v14.16.1 or later)
 MySQL database
@@ -63,6 +67,10 @@ TÜRKÇE
 Bu proje, XML verilerini MySQL veritabanına dönüştürür ve CRUD işlemleri, sayfalama ve arama işlevleri olan responsive bir web sayfası sağlar. Arama seçeneği, uuid değerlerinin değerlerini arar.
 
 Bu proje XML verilerini MySQL veritabanına dönüştürür ve sayfalama ve arama işlevleri ile CRUD işlemleri sağlar.
+
+Bu uygulamaya şu bağlantıdan erişebilirsiniz: https://hevi.vercel.app
+
+Eğer düğmeler çalışmazsa lütfen ana sayfaya gidin (https://hevi.vercel.app) ve tekrar deneyin.
 
 Gereksinimler
 Node.js (v14.16.1 veya daha yenis)

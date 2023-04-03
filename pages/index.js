@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Layout from '@/components/Layout';
 import { useState } from 'react';
 import AppContext from '@/context/appContext';
+import axios from 'axios';
 
 export default function Home({ users }) {
   const [myUsers, setMyUsers] = useState(users);
@@ -32,8 +33,8 @@ export default function Home({ users }) {
 }
 
 export async function getServerSideProps() {
-  const response = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/users/`);
-  const users = await response.json();
+  const response = await axios(`${process.env.NEXT_PUBLIC_HOST}/api/users/`);
+  const users = response.data;
 
   return {
     props: {
