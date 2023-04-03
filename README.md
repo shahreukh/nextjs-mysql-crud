@@ -1,10 +1,12 @@
 XML to MySQL with CRUD Operations and Pagination
-This project converts XML data to MySQL database, and provides CRUD operations with pagination and search functionality.
+This project converts XML data to MySQL database, and provides a responsive webpage with CRUD operations, pagination and search functionality.
+Search option searches values of uuid.
 
 Prerequisites
 Node.js (v14.16.1 or later)
 MySQL database
 PlanetScale database account (optional)
+Prisma
 Setup
 Clone the repository:
 bash
@@ -52,13 +54,13 @@ License
 MIT
 
 Developed by: Shahrukh Mirza Nawandish
-shahreukh@gmail.com
+Email: shahreukh@gmail.com
 
 ---
 
 TÜRKÇE
 
-XML'den MySQL veritabanına CRUD işlemleri ve Sayfalama
+Bu proje, XML verilerini MySQL veritabanına dönüştürür ve CRUD işlemleri, sayfalama ve arama işlevleri olan responsive bir web sayfası sağlar. Arama seçeneği, uuid değerlerinin değerlerini arar.
 
 Bu proje XML verilerini MySQL veritabanına dönüştürür ve sayfalama ve arama işlevleri ile CRUD işlemleri sağlar.
 
@@ -111,6 +113,3 @@ Pull talepleri memnuniyetle karşılanır. Büyük değişiklikler için önce n
 
 Lisans
 MIT
-
-Geliştirici: Shahrukh Mirza Nawandish
-shahreukh@gmail.com
