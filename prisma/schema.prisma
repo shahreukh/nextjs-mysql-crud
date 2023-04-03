@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url = env("DATABASE_URL")
+  relationMode = "prisma"
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  uuid              String   @db.VarChar(250)
+  beginPosition      String   @db.VarChar(250)
+  interpretation   String   @db.VarChar(250)
+  sequenceNumber     String   @db.VarChar(250)
+  correctionNumber   String   @db.VarChar(250)
+  name             String   @db.VarChar(250)
+  type             String   @db.VarChar(250)
+  lighted          String   @db.VarChar(250)
+  group            String   @db.VarChar(250)
+  position         String   @db.VarChar(250)
+  elevation          String   @db.VarChar(250)
+}
+
+
+

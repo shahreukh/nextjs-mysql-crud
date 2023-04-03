@@ -1,38 +1,116 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+XML to MySQL with CRUD Operations and Pagination
+This project converts XML data to MySQL database, and provides CRUD operations with pagination and search functionality.
 
-## Getting Started
+Prerequisites
+Node.js (v14.16.1 or later)
+MySQL database
+PlanetScale database account (optional)
+Setup
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/shahreukh/nextjs-mysql-crud.git
+Install the dependencies:
+bash
+Copy code
+cd your-repo-name
+npm install
+Set up your database:
+Create a .env file in the root of the project and add your database credentials:
 
-First, run the development server:
+makefile
+Copy code
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=
+DB_NAME=hevi
+If you are using PlanetScale, you can set up your .env file with the following variables:
 
-```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Usage
+Once the server is running, you can access the following endpoints:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+GET /api/users: Get all data with pagination and search parameters.
+GET /api/users/:id: Get a specific data by ID.
+POST /api/users: Create a new data.
+PUT /api/users/:id: Update an data by ID.
+DELETE /api/users/:id: Delete an data by ID.
+The pagination and search parameters can be passed as query parameters:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+page: The page number to return (default is 1).
+pageSize: The number of items to return per page (default is 10).
+search: The search query to filter the results (default is an empty string).
+Example usage:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Deployment
+This project can be deployed to any hosting provider that supports Node.js applications. To deploy it, you can run the following command:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+License
+MIT
 
-## Learn More
+Developed by: Shahrukh Mirza Nawandish
+shahreukh@gmail.com
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+TÜRKÇE
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+XML'den MySQL veritabanına CRUD işlemleri ve Sayfalama
 
-## Deploy on Vercel
+Bu proje XML verilerini MySQL veritabanına dönüştürür ve sayfalama ve arama işlevleri ile CRUD işlemleri sağlar.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Gereksinimler
+Node.js (v14.16.1 veya daha yenis)
+MySQL veritabanı
+PlanetScale veritabanı hesabı (isteğe bağlı)
+Kurulum
+Depoyu kopyalayın:
+bash
+Copy code
+git clone https://github.com/shahreukh/nextjs-mysql-crud.git
+Bağımlılıkları yükleyin:
+bash
+Copy code
+cd your-repo-name
+npm install
+Veritabanınızı ayarlayın:
+Projelerin kökünde bir .env dosyası oluşturun ve veritabanı kimlik bilgilerinizi ekleyin:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+makefile
+Copy code
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=
+DB_NAME=hevi
+PlanetScale kullanıyorsanız, aşağıdaki değişkenleri içeren .env dosyanızı ayarlayabilirsiniz:
+
+npm run dev
+Kullanım
+Sunucu çalıştırıldığında, aşağıdaki uç noktalara erişebilirsiniz:
+
+GET /api/users: Sayfalama ve arama parametreleriyle tüm verileri alın.
+GET /api/users/:id: ID'ye göre belirli bir veriyi alın.
+POST /api/users: Yeni bir veri oluşturun.
+PUT /api/users/:id: ID'ye göre bir veriyi güncelleyin.
+DELETE /api/users/:id: ID'ye göre bir veriyi silin.
+Sayfalama ve arama parametreleri sorgu parametreleri olarak iletilir:
+
+sayfa: Geri döndürülecek sayfa numarası (varsayılan 1).
+pageSize: Sayfa başına döndürülecek öğe sayısı (varsayılan 10).
+arama: Sonuçları filtrelemek için arama sorgusu (varsayılan boş dize).
+Örnek kullanım:
+
+Yayınlama
+Bu proje, Node.js uygulamalarını destekleyen herhangi bir barındırma sağlayıcısına dağıtılabilir. Dağıtmak için aşağıdaki komutu çalıştırabilirsiniz:
+
+Katılım
+Pull talepleri memnuniyetle karşılanır. Büyük değişiklikler için önce ne yapmak istediğinizi tartışmak için bir sorun açın.
+
+Lisans
+MIT
+
+Geliştirici: Shahrukh Mirza Nawandish
+shahreukh@gmail.com
